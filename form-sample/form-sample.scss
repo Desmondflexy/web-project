@@ -1,0 +1,81 @@
+body * {
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+    border: 2px solid red;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    li + li {
+        margin-top: 20px;
+    }
+
+    input, textarea {
+        width: 100%;
+        border: 2px solid lightcoral;
+    }
+
+    fieldset {
+        width: 100%;
+        min-width: 300px;
+        border: 2px solid lightcoral;
+
+        legend {
+            float: left;
+        }
+
+        input {
+            width: unset;
+            margin-left: 30px;
+        }
+    }
+
+    select[id='age'] {
+        width: 150px;
+        margin-left: 10px;
+        border: 2px solid lightcoral;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+
+        button {
+            width: 40%;
+            height: 40px;
+            background-color: darkred;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+
+            &:hover {
+                background-color: lightcoral;
+            }
+        }
+    }
+
+    input, textarea, select {
+        &:focus {
+            background-color: #eee;
+        }
+    }
+
+    fieldset input:hover fieldset {
+        background-color: #eee;
+    }
+}
