@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Sample</title>
+    <link href="form-sample.css" rel="stylesheet">
+</head>
+<body>
+<h1>Form</h1>
+<form action="">
+    <fieldset class="form">
+        <legend>Profile Info</legend>
+        <ul>
+            <li>
+                <label for="name">Name</label><br>
+                <input id="name" name="name" placeholder="John Doe" required type="text">
+            </li>
+            <li>
+                <label for="email">Email</label><br>
+                <input id="email" name="email" placeholder="example@email.com" required type="email">
+            </li>
+            <li>
+                <label for="password">Password</label><br>
+                <input id="password" name="password" placeholder="********" required type="password">
+            </li>
+            <li class="gender">
+                <fieldset>
+                    <legend>Gender</legend>
+                    <input id="male" name="radio" type="radio" required>
+                    <label for="male">Male</label>
+                    <input id="female" name="radio" type="radio" required>
+                    <label for="female">Female</label>
+                </fieldset>
+            </li>
+            <li>
+                <label for="age">Age</label>
+                <select id="age" name="age">
+                    <option value="opt1">0 - 18</option>
+                    <option value="opt2">18 - 30</option>
+                    <option value="opt3">31 - 40</option>
+                    <option value="opt4">41 - 50</option>
+                    <option value="opt5">50 +</option>
+                </select>
+            </li>
+            <li>
+                <label for="bio">Biography</label><br>
+                <textarea id="bio" name="bio" required></textarea>
+            </li>
+            <li class="button">
+                <button type="submit">Save my info</button>
+                <button type="reset">Reset form</button>
+            </li>
+        </ul>
+    </fieldset>
+</form>
+</body>
+</html>
